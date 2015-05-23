@@ -82,7 +82,7 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
     endif(COUCHBASE_SERVER_BUILD)
 endif()
 
-add_library(forestdb SHARED
+add_library(forestdb STATIC
             src/api_wrapper.cc
             src/atomic.cc
             src/avltree.cc
